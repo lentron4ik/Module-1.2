@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D59D77B-EFEC-4D79-9E1B-626E4BC9451D}</ProjectGuid>
+    <ProjectGuid>{1D6B9DB9-B8D4-47E5-AD25-2A31814355AA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>zd1</RootNamespace>
-    <AssemblyName>zd1</AssemblyName>
+    <RootNamespace>zd6</RootNamespace>
+    <AssemblyName>zd6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="zd1.cs" />
+    <Compile Include="zd6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
