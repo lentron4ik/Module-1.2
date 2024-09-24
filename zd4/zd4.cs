@@ -12,7 +12,7 @@ namespace zd4
         {
             Console.WriteLine("Введите размер массива K:");
             int K = int.Parse(Console.ReadLine());
-
+            
             Console.WriteLine("Введите диапазон значений A и B (A включительно, B не включительно):");
             int A = int.Parse(Console.ReadLine());
             int B = int.Parse(Console.ReadLine());
@@ -20,17 +20,16 @@ namespace zd4
             int[] array = new int[K];
             Random random = new Random();
 
-            // Заполняем массив случайными числами
+            // Заполнение массива случайными числами
             for (int i = 0; i < K; i++)
             {
                 array[i] = random.Next(A, B);
             }
 
-            // Вывод исходного массива
             Console.WriteLine("Исходный массив:");
             Console.WriteLine(string.Join(", ", array));
 
-            // Находим индексы минимального и максимального элементов
+            // Нахождение индексов минимального и максимального элементов
             int minIndex = 0, maxIndex = 0;
             for (int i = 1; i < K; i++)
             {
@@ -38,7 +37,6 @@ namespace zd4
                 if (array[i] > array[maxIndex]) maxIndex = i;
             }
 
-            // Выводим элементы между минимальным и максимальным индексами
             int start = Math.Min(minIndex, maxIndex);
             int end = Math.Max(minIndex, maxIndex);
 

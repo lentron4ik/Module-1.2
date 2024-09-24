@@ -23,14 +23,12 @@ namespace zd5
                 array[i] = (char)random.Next('а', 'я' + 1); // Буквы от 'а' до 'я'
             }
 
-            // Вывод исходного массива
             Console.WriteLine("Исходный массив:");
             Console.WriteLine(string.Join(", ", array));
 
             // Создание нового массива с согласными буквами
             char[] consonantArray = Array.FindAll(array, c => Array.IndexOf(consonants, c) >= 0);
 
-            // Вывод массива согласных букв
             Console.WriteLine("Массив согласных букв:");
             Console.WriteLine(string.Join(", ", consonantArray));
         }

@@ -19,11 +19,10 @@ namespace zd6
                 array[i] = random.NextDouble() * 20 - 10;
             }
 
-            // Вывод исходного массива
             Console.WriteLine("Исходный массив:");
             Console.WriteLine(string.Join(", ", array));
 
-            // Формируем массив индексов, отсортированных по возрастанию значений массива
+            // Формирование массива индексов, отсортированных по возрастанию значений массива
             int[] indices = new int[array.Length];
             for (int i = 0; i < indices.Length; i++)
             {
@@ -32,7 +31,6 @@ namespace zd6
 
             Array.Sort(indices, (i, j) => array[i].CompareTo(array[j]));
 
-            // Выводим отсортированные индексы
             Console.WriteLine("Массив индексов в порядке возрастания значений элементов:");
             Console.WriteLine(string.Join(", ", indices));
         }
